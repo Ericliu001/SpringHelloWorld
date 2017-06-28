@@ -1,32 +1,31 @@
 package au.com.ericliu.spring_helloworld.landom.data.entity;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-/**
- * Created by ericliu on 28/6/17.
- */
 @Entity
-@Table(name = "ROOM")
+@Table(name="ROOM")
 public class Room {
     @Id
-    @Column(name = "ROOM_ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="ROOM_ID")
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
-
-    @Column(name = "NAME")
+    @Column(name="NAME")
     private String name;
-
-    @Column(name = "ROOM_NUMBER")
+    @Column(name="ROOM_NUMBER")
     private String number;
-
-    @Column(name = "BED_INFO")
+    @Column(name="BED_INFO")
     private String bedInfo;
 
     public long getId() {
         return id;
     }
 
-    public void setId(final long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -34,7 +33,7 @@ public class Room {
         return name;
     }
 
-    public void setName(final String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -42,7 +41,7 @@ public class Room {
         return number;
     }
 
-    public void setNumber(final String number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -50,7 +49,7 @@ public class Room {
         return bedInfo;
     }
 
-    public void setBedInfo(final String bedInfo) {
+    public void setBedInfo(String bedInfo) {
         this.bedInfo = bedInfo;
     }
 }
