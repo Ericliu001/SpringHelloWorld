@@ -38,6 +38,8 @@ public class ReservationController {
             } catch (ParseException pe) {
                 date = new Date();
             }
+        } else {
+            date = new Date();
         }
 
         final List<RoomReservation> roomReservations = reservationService.getRoomReservations(date);
