@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>au.com.ericliu</groupId>
-	<artifactId>helloworld</artifactId>
+	<artifactId>SpringHelloworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>helloworld</name>
+	<name>SpringHelloworld</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
